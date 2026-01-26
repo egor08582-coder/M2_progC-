@@ -19,6 +19,7 @@ class Program
 
     void Run()
     {
+        /*
         Vraag1(); 
         Vraag2();
         Vraag3();
@@ -34,6 +35,12 @@ class Program
 
         string antwoordRandom = Console.ReadLine();
         Console.WriteLine(antwoordRandom);
+        */
+
+        AskRandomQuestion();
+        AskRandomQuestion();
+        AskRandomQuestion();
+        AskRandomQuestion();
     }
 
     string GetRandomVraag()
@@ -42,6 +49,16 @@ class Program
         int random = rnd.Next(vragen.Length);
         return GetVraag(random);
     }
+
+    void AskRandomQuestion()
+    {
+        string vraag = GetRandomVraag();
+        Console.WriteLine(vraag);
+
+        string antwoord = Console.ReadLine();
+        Console.WriteLine(antwoord);
+    }
+
     
     internal void Vraag1()
     {
