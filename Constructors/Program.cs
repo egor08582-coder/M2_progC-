@@ -12,7 +12,7 @@ private void Run()
 class QuizVraagAntwoord
 {
     internal QuizVraag vraag;
-    internal; bool goed;
+    internal bool goed;
 }
 
 class Quiz
