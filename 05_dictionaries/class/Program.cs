@@ -10,7 +10,6 @@
 
     void Run()
     {
-        // 1) создаём комнаты
         Room start = new Room(0, 0, new string[]
         {
             "xxxxx",
@@ -47,19 +46,16 @@
             "xxxxx"
         });
 
-        // 2) добавляем в dictionary
         rooms.Add(start.GetRoomLocationKey(), start);
         rooms.Add(room01.GetRoomLocationKey(), room01);
         rooms.Add(room11.GetRoomLocationKey(), room11);
         rooms.Add(room10.GetRoomLocationKey(), room10);
 
-        // 3) показываем несколько комнат
         ShowRoom(0, 0);
         ShowRoom(0, 1);
         ShowRoom(1, 1);
         ShowRoom(1, 0);
 
-        // 4) тест ошибки
         ShowRoom(2, 2);
     }
 
